@@ -1,10 +1,11 @@
 function ajax_modificationArticle(inputURL, requestUUID)
 {
-	url = "/" + inputURL + "/?requestUUID=" + requestUUID + "&type=modification"
+	url = "/" + inputURL + "/?requestUUID=" + requestUUID + "&readType=modification"
 	
 	$.ajax({
 		url : url,
 		success:function(data){
+			console.log(data)
 			// 제목
 			$('[name="title"]').val(data.title.toString())
 			
