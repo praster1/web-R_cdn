@@ -64,7 +64,7 @@ function ajax_board(inputUUID, tableName)
 				let today = new Date();   
 				if (getCurrentTime(7) <= data[key].created_at.toString())
 				{
-					tag_title += func_defineInputHtml_span("red", '<b><i class="fa-solid fa-seedling"></i></b>', fontSize)
+					tag_title += func_defineInputHtml_span("red", '&nbsp;<b><i class="fa-solid fa-seedling"></i></b>', fontSize)
 				}
 				
 				tag_footer = '</h5></a>'
